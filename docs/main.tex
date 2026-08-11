@@ -20,7 +20,7 @@
   urlcolor=blue,
   citecolor=blue,
   pdfauthor={Dr. Ricardo J. Fernández-Terán},
-  pdftitle={parseUV v1.0.0 — Technical Documentation, Format Specifications, and User Manual}
+  pdftitle={parseUV v1.0.2 — Technical Documentation, Format Specifications, and User Manual}
 }
 
 \usepackage{microtype}        % Improved hyphenation
@@ -54,7 +54,7 @@
 % --- Convenience macros ----------------------------------------------------
 \newcommand{\code}[1]{\texttt{\detokenize{#1}}}
 
-\title{\textbf{parseUV} v1.0.0\\[0.3em]
+\title{\textbf{parseUV} v1.0.2\\[0.3em]
   \large Spectrometer Binary Data Converter and Analysis Toolkit\\
   \large Technical Documentation, Format Specifications, and User Manual}
 \author{Dr. Ricardo J. Fernández-Terán}
@@ -80,7 +80,7 @@ This manual provides detailed installation instructions, low-level technical spe
 
 \subsection*{Acknowledgements}
 
-The author gratefully acknowledges \textbf{SpectraGryph} (optical spectroscopy software developed by Dr.~Friedrich Menges, \url{https://www.effmm.de/spectragryph/}) for serving as an explicit inspiration for this project, particularly in spectrometer binary data format discovery, data conversion workflows, and interactive spectroscopy software design.
+The author gratefully acknowledges \textbf{SpectraGryph} (optical spectroscopy software developed by Dr.~Friedrich Menges, \url{https://www.effemm2.de/spectragryph/}) for serving as an explicit inspiration for this project, particularly in spectrometer binary data format discovery, data conversion workflows, and interactive spectroscopy software design.
 
 \section{Detailed Installation Instructions}\label{sec:installation}
 
@@ -164,7 +164,7 @@ pip install -e .
 
 \subsection{Step 5 — Verifying the Installation}
 
-Confirm that \code{parseUV} imports correctly and reports version \code{1.0.0}:
+Confirm that \code{parseUV} imports correctly and reports version \code{1.0.2}:
 
 \begin{lstlisting}[language=bash, style=py]
 uv run python -c "import parseuv; print(parseuv.__version__)"

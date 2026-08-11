@@ -280,6 +280,6 @@ uv run pytest
 
 ## Acknowledgements
 
-Special thanks and acknowledgement to **SpectraGryph** (optical spectroscopy software developed by Dr. Friedrich Menges, [effmm.de/spectragryph](https://www.effmm.de/spectragryph/)) for serving as an explicit inspiration for format discovery, conversion workflows, and spectroscopy tooling design.
+Special thanks and acknowledgement to **SpectraGryph** (optical spectroscopy software developed by Dr. Friedrich Menges, [effmm.de/spectragryph](https://www.effemm2.de/spectragryph/)) for serving as an explicit inspiration for format discovery, conversion workflows, and spectroscopy tooling design.
 
 Copyright (c) 2026, Dr. Ricardo J. Fernández-Terán.
