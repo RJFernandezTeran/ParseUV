@@ -1,0 +1,139 @@
+### Fonts
+font.family: sans-serif
+font.sans-serif: TeX Gyre Heros, Helvetica, Arial
+
+
+mathtext.fontset : custom
+
+mathtext.bf:  sans:bold
+mathtext.bfit: sans:italic:bold
+mathtext.cal: cursive
+mathtext.it:  sans:italic
+mathtext.rm:  sans
+mathtext.sf:  sans
+mathtext.tt:  monospace
+mathtext.fallback: cm
+
+figure.titleweight : bold
+axes.labelweight : bold
+
+### Font Sizes
+axes.titlesize : 18
+axes.labelsize : 18
+legend.fontsize : 11
+xtick.labelsize : 16
+ytick.labelsize : 16
+
+### Axes
+axes.formatter.use_mathtext : True
+
+### Lines
+lines.linewidth : 2
+axes.linewidth  : 1
+hatch.linewidth	: 0.5
+
+lines.markersize : 10
+
+contour.negative_linestyle : -
+
+lines.antialiased : True
+patch.antialiased : True
+
+### Ticks
+	xtick.top: False
+	xtick.bottom: True
+	xtick.major.size: 8.0
+	xtick.minor.size: 4.0
+	xtick.major.width: 0.75
+	xtick.minor.width: 0.75
+	xtick.direction: out
+	xtick.minor.visible: True
+#	xtick.major.top: True
+#	xtick.major.bottom: True
+#	xtick.minor.top: True
+#	xtick.minor.bottom: True
+	xtick.major.pad: 7.0
+	xtick.minor.pad: 7.0
+
+	ytick.left: True
+	ytick.right: False
+	ytick.major.size: 8.0
+	ytick.minor.size: 4.0
+	ytick.major.width: 0.75
+	ytick.minor.width: 0.75
+	ytick.direction: out
+	ytick.minor.visible: True
+#	ytick.major.left: True
+#	ytick.major.right: True
+#	ytick.minor.left: True
+#	ytick.minor.right: True
+	ytick.major.pad: 7.0
+	ytick.minor.pad: 7.0
+
+### Legend
+	legend.frameon: False
+	legend.labelspacing: 0.3
+	legend.handletextpad: 0.5
+	legend.handlelength: 1.4
+	legend.borderpad: 0.4
+
+### Figure size
+	figure.figsize: 7, 4.375 # golden ratio
+	#figure.figsize: 7, 3.5
+	figure.subplot.left: 0.125
+	figure.subplot.bottom: 0.175
+	figure.subplot.top: 0.95
+	figure.subplot.right: 0.95
+	figure.autolayout : False
+
+### TEX
+	text.usetex : False
+#	text.latex.preamble : \usepackage{amsmath} \usepackage{bm}
+#	text.latex.preamble: \usepackage{tgheros} \usepackage{sansmath} \sansmath \usepackage[separate-uncertainty=true]{siunitx} \sisetup{detect-all} \usepackage{amsmath} \usepackage{mhchem}
+# 	text.latex.preamble: \usepackage[T1]{fontenc} \usepackage{amsmath} \usepackage{uhelvetica}
+	
+### Saving figures
+	path.simplify 		: True
+	savefig.dpi 		: 600
+	savefig.format 		: pdf
+	
+	ps.useafm         	: True
+	ps.fonttype 	   	: 42         # Output Type 3 (Type3) or Type 42 (TrueType)	
+	ps.usedistiller   	: xpdf
+
+	pdf.fonttype       	: 42         # Output Type 3 (Type3) or Type 42 (TrueType)
+	pdf.inheritcolor   	: False
+	pdf.use14corefonts 	: False
+	pdf.compression   	: 9 # 0 disables compression (good for debugging)
+	
+## # Event keys to interact with figures/plots via keyboard.
+## # Customize these settings according to your needs.
+## # Leave the field(s) empty if you don't need a key-map. (i.e., fullscreen : '')
+## 
+## keymap.fullscreen : f, ctrl+f       # toggling
+## keymap.home : h, r, home            # home or reset mnemonic
+## keymap.back : left, c, backspace    # forward / backward keys to enable
+## keymap.forward : right, v           #   left handed quick navigation
+## keymap.pan : p                      # pan mnemonic
+## keymap.zoom : z                     # zoom mnemonic
+## keymap.save : s, ctrl+s             # saving current figure
+## keymap.quit : ctrl+w, cmd+w         # close the current figure
+## keymap.grid : g                     # switching on/off a grid in current axes
+## keymap.yscale : l                   # toggle scaling of y-axes ('log'/'linear')
+## keymap.xscale : k, L                # toggle scaling of x-axes ('log'/'linear')
+
+###ANIMATION settings
+animation.writer : ffmpeg         # MovieWriter 'backend' to use
+animation.codec : mpeg4           # Codec to use for writing movie
+animation.bitrate: -1             # Controls size/quality tradeoff for movie.
+                                  # -1 implies let utility auto-determine
+animation.frame_format: png       # Controls frame format used by temp files
+animation.ffmpeg_path: ffmpeg     # Path to ffmpeg binary. Without full path
+                                  # $PATH is searched
+animation.ffmpeg_args:            # Additional arguments to pass to ffmpeg
+animation.convert_path: convert   # Path to ImageMagick's convert binary.
+                                  # On Windows use the full path since convert
+                                  # is also the name of a system tool.
+animation.convert_args:
+animation.html: none
+

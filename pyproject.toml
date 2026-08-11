@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "parseuv"
+dynamic = ["version"]
+description = "Parser, PyQt6 GUI, and CSV converter for Varian / Agilent Cary (.DSW, .BSW) and Shimadzu UV-Vis-NIR (.SPC) binary files."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Dr. Ricardo J. Fernández-Terán", email = "ricardo.fernandezteran@unige.ch" }]
+dependencies = [
+    "matplotlib>=3.8.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "PyQt6>=6.5.0",
+    "PyQt6-sip>=13.5.0",
+    "olefile>=0.46",
+]
+
+[project.optional-dependencies]
+gui = []
+dev = ["ruff>=0.16.2", "pytest>=7.4.0"]
+
+[project.scripts]
+parseuv = "parseuv.cli:main"
+parseuv-gui = "parseuv.gui:launch_gui"
+parseuv-install-fonts = "parseuv.fonts:main"
+
+[tool.hatch.version]
+path = "src/parseuv/__about__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/parseuv"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "W"]
+ignore = [
+    "E501", # line length handled by formatter
+    "E741", # ambiguous names
+]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

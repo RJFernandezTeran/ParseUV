@@ -1,0 +1,11 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Binary files
+*.BSW binary
+*.DSW binary
+*.bsw binary
+*.dsw binary
+*.png binary
+*.jpg binary
+*.pdf binary
