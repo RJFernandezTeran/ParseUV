@@ -1,5 +1,6 @@
 # parseUV
 
+[![PyPI version](https://img.shields.io/pypi/v/parseuv.svg)](https://pypi.org/project/parseuv/)
 [![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
 [![License](https://img.shields.io/badge/license-BSD--3--Clause-green.svg)](LICENSE)
@@ -32,15 +33,29 @@ A Python package and PyQt6 GUI application for reading, visualizing, and exporti
 
 ## Installation
 
+The package is available on [PyPI](https://pypi.org/project/parseuv/).
+
+### Using `pip`
+
+```bash
+pip install parseuv
+```
+
 ### Using `uv` (Recommended)
 
 ```bash
-git clone https://github.com/username/parseUV.git
-cd parseUV
+uv add parseuv
+```
+
+### Development Install (from source)
+
+```bash
+git clone https://github.com/RJFernandezTeran/ParseUV.git
+cd ParseUV
 uv pip install -e .
 ```
 
-### Standard `pip`
+Or with standard pip:
 
 ```bash
 pip install -e .

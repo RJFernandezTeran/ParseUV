@@ -84,7 +84,7 @@ The author gratefully acknowledges \textbf{SpectraGryph} (optical spectroscopy s
 
 \section{Detailed Installation Instructions}\label{sec:installation}
 
-\code{parseUV} requires \textbf{Python~3.9 or later} and is managed using \href{https://docs.astral.sh/uv/}{\textbf{uv}}, a fast Python project and package manager.
+\code{parseUV} is available on the \href{https://pypi.org/project/parseuv/}{\textbf{Python Package Index (PyPI)}} and requires \textbf{Python~3.9 or later}.
 
 \subsection{Step 1 — System Requirements and Python Setup}
 
@@ -118,34 +118,40 @@ Verify the installation:
 uv --version
 \end{lstlisting}
 
-\subsection{Step 3 — Obtaining the Source Code}
+\subsection{Step 3 — Installing parseUV}
 
-Clone the repository or extract the source archive into your working directory:
-
+\noindent\textbf{From PyPI using pip (standard).}\par\nopagebreak\vspace{0.3em}
 \begin{lstlisting}[language=bash, style=py]
-git clone https://github.com/username/parseUV.git
-cd parseUV
+pip install parseuv
 \end{lstlisting}
 
-\subsection{Step 4 — Virtual Environment Creation and Installation}
+\noindent\textbf{From PyPI using uv (recommended).}\par\nopagebreak\vspace{0.3em}
+\begin{lstlisting}[language=bash, style=py]
+uv add parseuv
+\end{lstlisting}
 
-Create an isolated virtual environment and install \code{parseUV} in editable mode:
+\subsection{Step 4 — Development / Editable Install (from Source)}
 
-\noindent\textbf{Core Installation (User Mode).}\par\nopagebreak\vspace{0.3em}
+For contributors or users who want to modify the source code, clone the repository and install in editable mode:
+
+\begin{lstlisting}[language=bash, style=py]
+git clone https://github.com/RJFernandezTeran/ParseUV.git
+cd ParseUV
+\end{lstlisting}
+
+\noindent\textbf{Editable install with uv.}\par\nopagebreak\vspace{0.3em}
 \begin{lstlisting}[language=bash, style=py]
 uv venv
 uv pip install -e .
 \end{lstlisting}
 
-\noindent\textbf{Full Development Installation.}\par\nopagebreak\vspace{0.3em}
-To install development extras (\code{ruff} linter and \code{pytest} runner):
+\noindent\textbf{Full development extras (\code{ruff} + \code{pytest}).}\par\nopagebreak\vspace{0.3em}
 \begin{lstlisting}[language=bash, style=py]
 uv venv
 uv pip install -e ".[dev]"
 \end{lstlisting}
 
-\noindent\textbf{Standard pip Installation.}\par\nopagebreak\vspace{0.3em}
-If you prefer standard \code{pip} without \code{uv}:
+\noindent\textbf{Editable install with standard pip.}\par\nopagebreak\vspace{0.3em}
 \begin{lstlisting}[language=bash, style=py]
 python -m venv .venv
 # Linux / macOS
