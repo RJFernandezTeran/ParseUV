@@ -41,13 +41,13 @@ def _make_cary_binary(n: int = 601, start: float = 800.0, end: float = 200.0) ->
     Build a minimal but valid Cary DSW binary blob that _parse_spectra() can decode.
 
     Layout:
-      byte 0        – length of the magic string
-      bytes 1..N    – magic string "Varian UV-VIS DSW"
-      bytes 0x5D–0x60 – end_wavelength (float LE)
-      bytes 0x61–0x64 – start_wavelength (float LE)
-      bytes 0x6D–0x70 – num_points (int LE)
-      256-byte gap    – zeroed (stands in for ASCII metadata block / title prefix)
-      spectral data   – n × (wavelength float LE, absorbance float LE)
+      byte 0        - length of the magic string
+      bytes 1..N    - magic string "Varian UV-VIS DSW"
+      bytes 0x5D-0x60 - end_wavelength (float LE)
+      bytes 0x61-0x64 - start_wavelength (float LE)
+      bytes 0x6D-0x70 - num_points (int LE)
+      256-byte gap    - zeroed (stands in for ASCII metadata block / title prefix)
+      spectral data   - n x (wavelength float LE, absorbance float LE)
     """
     magic = b"Varian UV-VIS DSW"
     header = bytearray(0x200)           # 512-byte header blank slate
