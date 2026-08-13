@@ -1,9 +1,14 @@
 # parseUV
 
-[![PyPI version](https://img.shields.io/pypi/v/parseuv.svg)](https://pypi.org/project/parseuv/)
-[![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
+[![PyPI - Version](https://img.shields.io/pypi/v/parseuv.svg)](https://pypi.org/project/parseuv/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/parseuv.svg)](https://pypi.org/project/parseuv/)
+[![Downloads](https://img.shields.io/pepy/dt/parseuv?label=downloads)](https://pepy.tech/project/parseuv)
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
-[![License](https://img.shields.io/badge/license-BSD--3--Clause-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](https://github.com/RJFernandezTeran/ParseUV/blob/main/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/RJFernandezTeran/ParseUV?style=flat)](https://github.com/RJFernandezTeran/ParseUV/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/RJFernandezTeran/ParseUV)](https://github.com/RJFernandezTeran/ParseUV/issues)
+[![Publish Status](https://img.shields.io/github/actions/workflow/status/RJFernandezTeran/ParseUV/python-publish.yml?label=publish)](https://github.com/RJFernandezTeran/ParseUV/actions/workflows/python-publish.yml)
 
 A Python package and PyQt6 GUI application for reading, visualizing, and exporting proprietary binary files from:
 - **Varian / Agilent Cary** UV-Vis-NIR spectrophotometers (`.DSW`, `.BSW`)
