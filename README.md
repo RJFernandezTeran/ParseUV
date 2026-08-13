@@ -5,6 +5,7 @@
 [![Downloads](https://img.shields.io/pepy/dt/parseuv?label=downloads)](https://pepy.tech/project/parseuv)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
+[![CodeFactor](https://www.codefactor.io/repository/github/RJFernandezTeran/ParseUV/badge)](https://www.codefactor.io/repository/github/RJFernandezTeran/ParseUV)
 [![License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](https://github.com/RJFernandezTeran/ParseUV/blob/main/LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/RJFernandezTeran/ParseUV?style=flat)](https://github.com/RJFernandezTeran/ParseUV/stargazers)
 [![GitHub Issues](https://img.shields.io/github/issues/RJFernandezTeran/ParseUV)](https://github.com/RJFernandezTeran/ParseUV/issues)
