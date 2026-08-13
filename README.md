@@ -8,7 +8,6 @@
 [![License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](https://github.com/RJFernandezTeran/ParseUV/blob/main/LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/RJFernandezTeran/ParseUV?style=flat)](https://github.com/RJFernandezTeran/ParseUV/stargazers)
 [![GitHub Issues](https://img.shields.io/github/issues/RJFernandezTeran/ParseUV)](https://github.com/RJFernandezTeran/ParseUV/issues)
-[![Publish Status](https://img.shields.io/github/actions/workflow/status/RJFernandezTeran/ParseUV/python-publish.yml?label=publish)](https://github.com/RJFernandezTeran/ParseUV/actions/workflows/python-publish.yml)
 
 A Python package and PyQt6 GUI application for reading, visualizing, and exporting proprietary binary files from:
 - **Varian / Agilent Cary** UV-Vis-NIR spectrophotometers (`.DSW`, `.BSW`)
